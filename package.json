@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "touch $RANDOM",
+    "build": "touch dist/$RANDOM",
     "preversion": "[[ -z $(git status --porcelain) ]] && npm run build && git add -A dist && git commit -m 'Build lib'",
     "prepublish": "git push origin master --follow-tags"
   },
