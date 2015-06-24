@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "touch $RANDOM",
-    "preversion": "[[ -z $(git status --porcelain) ]] && git status --porcelain npm run build && git add -A && git commit -m 'Build lib'",
+    "preversion": "[[ -z $(git status --porcelain) ]] && npm run build && git add -A dist && git commit -m 'Build lib'",
     "prepublish": "git push origin master --follow-tags"
   },
   "repository": {
