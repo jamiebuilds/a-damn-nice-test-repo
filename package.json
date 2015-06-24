@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "touch $RANDOM",
-    "preversion": "npm run build && git commit -am 'Build lib'",
+    "preversion": "npm run build && git commit -im 'Build lib'",
     "prerelease": "git push origin --follow-tags"
   },
   "repository": {
