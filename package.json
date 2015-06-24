@@ -1,0 +1,21 @@
+{
+  "name": "a-damn-nice-test-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "touch $RANDOM",
+    "preversion": "npm run build && git commit -am 'Build lib'",
+    "prerelease": "git push origin --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thejameskyle/a-damn-nice-test-repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thejameskyle/a-damn-nice-test-repo/issues"
+  },
+  "homepage": "https://github.com/thejameskyle/a-damn-nice-test-repo#readme"
+}
