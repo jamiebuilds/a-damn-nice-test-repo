@@ -6,7 +6,7 @@
   "scripts": {
     "build": "touch $RANDOM",
     "preversion": "npm run build && git add -A && git commit -m 'Build lib'",
-    "prepublish": "git push origin --follow-tags"
+    "prepublish": "git push origin master --follow-tags"
   },
   "repository": {
     "type": "git",
